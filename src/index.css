@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap');
 
+:root {
+	--main-color: #fffafa;
+	--secondary-color: #404040;
+  
+	--high-font: 'Libre Baskerville', serif;
+	--regular-font: 'Montserrat', sans-serif;
+  }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,24 +59,19 @@ table {
 }
 p,span, h1, h2, h3, h4, h5, li, pre {
 	color: var(--secondary-color);
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--high-font);
+	line-height: 1.5;
 }
-/*Variables and general classes*/
-:root {
-  --main-color: #fffafa;
-  --secondary-color: #404040;
-}
-.main-font {
-  font-family: 'Libre Baskerville', serif;
-}
-.secondary-font {
-  font-family: 'Montserrat', sans-serif;
+/*General classes*/
+.title {
+	font-family: var(--high-font);
 }
 .bold {
 	font-weight: bold;
 }
 .container {
 	max-width: 1000px;
+	margin: 0 auto;
 }
 .grid {
 	display: grid;
@@ -86,4 +89,44 @@ p,span, h1, h2, h3, h4, h5, li, pre {
 	.mobile {
 		display: none;
 	}
+}
+
+/*Book index*/
+.index {
+	padding: 1rem;
+	margin-top: 2rem;
+}
+.index .title {
+	font-size: 2rem;
+	text-align: center;
+}
+.index__container {
+	text-align: center;
+}
+.index__list {
+	text-align: left;
+	margin-top: 4rem;
+	counter-reset: item;
+	display: inline-block;
+}
+.index__list--item{
+	margin-bottom: 1.2rem;
+}
+.index__list--item a {
+	max-width: 500px;
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+.index__list--item .index--roman {
+    display: block;
+    width: 50px;
+    text-align: left;
+    margin-right: 1.2rem;
+}
+.index__list--item .poem-title {
+	width: 100%;
+}
+.index__list--item .index--roman:before {
+	content: counters(item, ".", upper-roman)". ";
+	counter-increment: item;
 }

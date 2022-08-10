@@ -15,13 +15,13 @@ const Header = () => {
         <Drawer checked={checked} drawer={drawer} />
       </div>
       <div className='header__middle'>
-        <h1 className='main-font bold'><Link to='/'>Odas necias</Link></h1>
+        <h1 className='high-font bold'><Link to='/'>Odas necias</Link></h1>
       </div>
       <div className='header__right desktop'>
         <ul className='flex'>
           <li><NavLink to='/indice'>Indice</NavLink></li>
           <li><NavLink to='/contacto'>Contacto</NavLink></li>
-          <li><a href='javascript:;'>Descargar</a></li>
+          <li><a href=''>Descargar</a></li>
         </ul>
       </div>
     </header>
