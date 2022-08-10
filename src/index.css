@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap');
 
-
-:root {
-  --main-color: #fffafa;
-  --secondary-color: #404040;
-
-}
-.main-font {
-  font-family: 'Libre Baskerville', serif;
-}
-.secondary-font {
-  font-family: 'Montserrat', sans-serif;
-}
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -63,4 +49,41 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+p,span, h1, h2, h3, h4, h5, li, pre {
+	color: var(--secondary-color);
+	font-family: 'Montserrat', sans-serif;
+}
+/*Variables and general classes*/
+:root {
+  --main-color: #fffafa;
+  --secondary-color: #404040;
+}
+.main-font {
+  font-family: 'Libre Baskerville', serif;
+}
+.secondary-font {
+  font-family: 'Montserrat', sans-serif;
+}
+.bold {
+	font-weight: bold;
+}
+.container {
+	max-width: 1000px;
+}
+.grid {
+	display: grid;
+}
+.flex{
+	display: flex;
+} 
+.desktop {
+	display: none;
+}
+@media(min-width: 768px) {
+	.desktop{
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
+}

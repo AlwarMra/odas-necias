@@ -37,6 +37,12 @@
             "content":"Todo se apoya sobre un mismo punto\r\ncon centro en toda y en ninguna parte,\r\nen las ahuecadas manos de Sísifo,\r\nen la atragantada escama del griego\r\ny en la mácula del martillo oscuro.\r\nHay quien vio en la moneda la refleja\r\nmáscara de la sola cara esférica\r\nque cae en la resaca de la suerte\r\no por el endiablado tragaluz\r\ndel agónico árbol infinito.\r\nTodavía bailamos en la hoguera\r\nlos desechos vacíos del incrédulo\r\nplatillo de hueso, seso y el augurio\r\nde que todo se repite, ilusiones\r\nde movimiento, la vuelta conclusa\r\nque resurge, idéntica, la vida.\r\nEl anillo no reverbera el sol\r\nni el dedo unge de escaleras espirales\r\nla forzosa decisión del pretor.\r\nLaberinto, reverso del pasillo,\r\npor mucho que se abreven en tus fuentes\r\nlos inconscientes rebaños del vaho,\r\nel agua no retorna a la memoria."
         },
         {
+            "slug":"oda-orden-axis-mundi",
+            "title":"Oda al orden. Axis mundi",
+            "content":"En lo alto de la torre se desborda un jardín \r\nque mira tuberoso cúpula de hilo y fin, \r\nde su centro la cuerda por el pozo \r\ndesciende con la gracia \r\ndescolgándose \r\ndel misterio. \r\ncae el agua \r\nespiral \r\na este aljibe \r\nde vivaz tierra inhumada, \r\nse ve el rostro \r\nazul, seco, \r\nde la niebla \r\ndel desierto. \r\nLa escalera \r\nes un vértice plano, \r\nun báculo, la leche del perenne \r\nalbatros. Del profundo surco oscuro se riegan \r\ndesfallecidas yemas en la nada suspensa.",
+            "center": true
+        },
+        {
             "slug":"oda-tiempo-agua-en-agua",
             "title":"Oda al tiempo. Como el agua en el agua",
             "content": "Somos el agua del viento,\r\nel devenir de las olas,\r\nel escindido recuerdo\r\ndel río de la memoria.\r\nlos cántaros desmayados\r\npor la piedra se derraman\r\npersistentes y ahogados\r\nen la fonda del mañana.\r\n\r\nSomos la noche en el vaho,\r\nteas en nieblas de aurora,\r\nuna jofaina de barro\r\nen la que limpiar la copa,\r\nla libación de un seno\r\nen la clepsidra de arena,\r\nde espaldas fuma en el cerro\r\nla mujer que nos espera.\r\n\r\nNo somos ni crin del río,\r\nno hay humo que el cuerpo lave,\r\nProteo desvanecido\r\ndel incienso en el aire.\r\nAunque ya sea la calma\r\naun queda sobre mi frente\r\nla disipada fragancia\r\ndel sándalo y del aceite."
@@ -78,9 +84,19 @@
             "content":"Quién recoge su ser \r\nen bancos de bullicio. \r\nResuenan luces de tacón \r\nen el aroma ajeno \r\ndel vaho de las flores. \r\nCon suerte seas el té de esta biblioteca \r\nsi ya no eres el vino."
         },
         {
+            "slug":"oda-nocturna",
+            "title":"Oda nocturna",
+            "content":"El fulgor de las estrellas, las olas \r\ntejedoras de las dunas, los astros \r\ny sus colas que alucinan la aurora \r\nfueron lona inflamada por el báculo \r\nque sostiene la yurta de la memoria. \r\n \r\nEn el silencio del astroso tránsito, \r\nEntre inconsciencia y plena lumbre nova, \r\nla hechura se abre profana en los campos \r\ndesnuda de la niebla perfumada \r\nque exhalan las orillas venideras. \r\n \r\nRespiraste, arena disoluta, \r\nhebras de fe nocturna – la marea \r\nno agita mi melena descansada. \r\nMe disuelvo, occiso, bajo la espuma."
+        },
+        {
             "slug":"oda-perfume-mi-cuerpo",
             "title":"Oda al perfume de mi cuerpo",
             "content":"Sosegada demencia de los ramos \r\nfrescos y recién cortados, el polvo \r\nfavorece el rocío vespertino. \r\nLos granados me han llenado por dentro \r\ncon otoñales festines de pájaros, \r\nentre mis costillas suspende el aire \r\nel fruto hueco del que crecen los árboles. \r\n¿En qué sueño a pedazos destrozado \r\nfueron las flores de mi cuerpo, fueron \r\nlos incipientes pétalos salvajes \r\nde mi pecho, la ascendente humareda, \r\nlas brasas dormidas del incensario? \r\nCuando ya no piense en la exhalación \r\npausada de las hojas, y el quinqué, \r\ncontra la oscuridad que lo circunde, \r\npractique la incisión en mi cabeza \r\nabierta en un canal de perfumes, \r\nse preguntará a los lirios azules \r\nde mi boca, a mi desnudez clavada \r\nal musgo que recubre nuestra carne, \r\nqué hay del vacío que queda inerme."
+        },
+        {
+            "slug":"oda-fracaso-alejandro-makran",
+            "title":"Oda al fracaso. Alejandro en el Makrán",
+            "content":"Por provisiones ya no quedan \r\nni la carnes de nuestros caballos, \r\nahora envidiamos al aborigen salvaje de la costa, \r\nsin vestido ni lenguaje, pescando ballenas putrefactas. \r\nEl salitre y la oquedad del desierto \r\nhuelen igual, saben igual. \r\nNuestros barcos no llegan. \r\nNos sigue la argéntea estela del tesoro, \r\nhay estatuillas extranjeras señalando al sol. \r\nDeliro enfermo y herido en la camilla \r\ny veo al atardecer las colinas de mi patria, \r\nen sueños Ciro y Semiramis me torturan, \r\nse ríen de mí. \r\nEl cortijo de amantes y bestias muere, \r\nmis hombres no me culpan pero ya no me ven \r\ncomo un dios. Mis hombres,  \r\noh mis hombres! ya son sombras.  \r\n \r\nTanto quise Macedonia que nunca más \r\nla volvería a ver. Será que tú, Patroclo,  \r\ntanto así me amaste?  \r\nA veces te pienso y maldigo mi grandeza, \r\nnunca me tembló el pulso \r\ncon tu voz serena.  \r\n \r\nNo he conquistado el mundo, \r\ncada grano de arena me lo recuerda. \r\nCreo oír una lanza que rueda por las rocas, \r\nno me atrevo a volver la mirada \r\ny comprobar que ya nadie me sigue. \r\nDifunde el viento mi nombre? \r\nCantarán mis hijos que los hombres, los dioses y los mundos, \r\nque la sumisión que impuse al destino \r\nme mandó a un desierto para derrotarme?"
         },
         {
             "slug":"oda-occidental",

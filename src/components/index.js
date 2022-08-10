@@ -1,0 +1,5 @@
+export { default as Header } from './header/Header'
+export { default as Home } from './Home'
+export { default as BookIndex } from './BookIndex'
+export { default as Oda } from './Oda'
+export { default as Footer } from './Footer'
