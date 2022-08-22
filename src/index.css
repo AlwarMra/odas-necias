@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   background-color: var(--main-color);
-	line-height: 1;
+  line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -57,10 +57,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-p,span, h1, h2, h3, h4, h5, li, pre {
+p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	color: var(--secondary-color);
 	font-family: var(--high-font);
-	line-height: 1.5;
+}
+.App {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 /*General classes*/
 .title {
@@ -90,7 +94,16 @@ p,span, h1, h2, h3, h4, h5, li, pre {
 		display: none;
 	}
 }
-
+/* Footer */
+.footer {
+	padding: 1rem;
+	padding-top: 3rem;
+	text-align: right;
+	margin-top: auto;
+}
+.footer small{
+	font-size: .8rem;
+}
 /*Book index*/
 .index {
 	padding: 1rem;
@@ -130,3 +143,128 @@ p,span, h1, h2, h3, h4, h5, li, pre {
 	content: counters(item, ".", upper-roman)". ";
 	counter-increment: item;
 }
+.index__link {
+	color: var(--secondary-color);
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+/*Oda */
+.poem {
+	margin-top: 2rem;
+	text-align: center;
+	padding: 0 1rem;
+}
+.poem .title {
+	text-align: center;
+	font-size: 2rem;
+}
+.poem .quote {
+	text-align: right;
+	font-style: italic;
+}
+.poem pre {
+	text-align: left;
+	margin: 2rem 0;
+	margin-left: auto;
+	white-space: pre-wrap;
+	max-width: 700px;
+}
+.poem pre.center {
+	text-align: center;
+	max-width: initial;
+}
+.poem__nav {
+	margin: 5rem 0;
+}
+.poem__nav .poem__nav--prev {
+	float: left;
+}
+.poem__nav .poem__nav--next {
+	float: right;
+}
+.poem__nav a {
+	text-decoration: none;
+	position: relative;
+}
+.poem__nav--arrow {
+	display: inline-block;
+	width: 125%;
+	height: 1px;
+	background-color: var(--secondary-color);
+	position: absolute;
+	margin: 0 .5rem;
+	bottom: -6px;
+}
+.poem__nav--arrow.right {
+	left: -10px;
+}
+.poem__nav--arrow.left {
+	right: -10px;
+}
+.poem__nav--arrow .shaft::before,
+.poem__nav--arrow .shaft::after {
+	background-color: var(--secondary-color);
+	content: '';
+	display: inline-block;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	width: 8px;
+}
+.poem__nav--arrow.right .shaft::before,
+.poem__nav--arrow.right .shaft::after {
+	right: 0;
+}
+.poem__nav--arrow.left .shaft::before,
+.poem__nav--arrow.left .shaft::after {
+	left: 0;
+}
+.poem__nav--arrow.right .shaft::before,
+.poem__nav--arrow.left .shaft::before	{
+	transform: rotate(40deg);
+}
+.poem__nav--arrow.right .shaft::after,
+.poem__nav--arrow.left .shaft::after	{
+	transform: rotate(-40deg);
+}
+.poem__nav--arrow.right .shaft::before {
+	transform-origin: top right;
+}
+.poem__nav--arrow.right .shaft::after {
+	transform-origin: bottom right;
+}
+.poem__nav--arrow.left .shaft::before {
+	transform-origin: top left;
+}
+.poem__nav--arrow.left .shaft::after {
+	transform-origin: bottom left;
+}
+.poem__nav--next:hover .poem__nav--arrow.right {
+	animation: 1s arrow-right linear infinite;
+}
+.poem__nav--prev:hover .poem__nav--arrow.left {
+	animation: 1s arrow-left linear infinite;
+}
+@keyframes arrow-right {
+	0%,
+	100% {
+	  transform: translate(0, 0);
+	}
+  
+	50% {
+	  transform: translate(10px, 0);
+	}
+  }
+  @keyframes arrow-left {
+	0%,
+	100% {
+	  transform: translate(0, 0);
+	}
+  
+	50% {
+	  transform: translate(-10px, 0);
+	}
+  }

@@ -9,13 +9,13 @@ const Header = () => {
   const drawer = () => { setChecked(!checked) }
 
   return (
-    <header className='header grid container'>
+    <header className='header grid'>
       <div className='header__left mobile'>
         <Hamburguer drawer={drawer} />
         <Drawer checked={checked} drawer={drawer} />
       </div>
       <div className='header__middle'>
-        <h1 className='high-font bold'><Link to='/'>Odas necias</Link></h1>
+        <p className='high-font bold'><Link to='/'>Odas necias</Link></p>
       </div>
       <div className='header__right desktop'>
         <ul className='flex'>

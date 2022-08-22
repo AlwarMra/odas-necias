@@ -1,11 +1,9 @@
 import './App.css'
 import { Header, Home, BookIndex, Oda, Footer } from './components/index'
 import { Route, Routes } from 'react-router-dom'
-import data from './assets/data.json'
 function App () {
-  console.log(data.data)
   return (
-    <div className='App'>
+    <div className='App container'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
