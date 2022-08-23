@@ -57,6 +57,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+em {
+	font-style: italic;
+}
 p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	color: var(--secondary-color);
 	font-family: var(--high-font);
@@ -69,6 +72,8 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 /*General classes*/
 .title {
 	font-family: var(--high-font);
+	text-align: center;
+	font-size: 2rem;
 }
 .bold {
 	font-weight: bold;
@@ -94,10 +99,30 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 		display: none;
 	}
 }
+/* Overlay*/
+#overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
+}
+#overlay[aria-hidden='false'] {
+	display: block;
+}
+.noscroll {
+	overflow-y: hidden;
+}
 /* Footer */
 .footer {
 	padding: 1rem;
-	padding-top: 3rem;
+	padding-top: 5rem;
 	text-align: right;
 	margin-top: auto;
 }
@@ -112,6 +137,9 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 .index .title {
 	font-size: 2rem;
 	text-align: center;
+}
+.index .content {
+	margin: 2rem 0;
 }
 .index__container {
 	text-align: center;
@@ -157,11 +185,7 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	text-align: center;
 	padding: 0 1rem;
 }
-.poem .title {
-	text-align: center;
-	font-size: 2rem;
-}
-.poem .quote {
+.quote {
 	text-align: right;
 	font-style: italic;
 }
@@ -177,7 +201,8 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	max-width: initial;
 }
 .poem__nav {
-	margin: 5rem 0;
+	margin: 5rem auto;
+	width: 90%;
 }
 .poem__nav .poem__nav--prev {
 	float: left;
@@ -188,6 +213,7 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 .poem__nav a {
 	text-decoration: none;
 	position: relative;
+	font-size: 1.2rem;
 }
 .poem__nav--arrow {
 	display: inline-block;
@@ -267,4 +293,16 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	50% {
 	  transform: translate(-10px, 0);
 	}
+  }
+
+
+  .index.home {
+	opacity: 0;
+	position: relative;
+	top: 4rem;
+	transition: .7s all ease-in-out;
+}
+  .home.visible {
+	opacity: 1;
+	top: 0;
   }

@@ -19,7 +19,6 @@ export const toRomanNumber = (num) => {
     if (num >= roman[n]) {
       romanNumber += n.repeat(Math.floor(num / roman[n]))
       num %= roman[n]
-      console.log(romanNumber, num)
     }
   }
   return romanNumber
