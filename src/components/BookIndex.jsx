@@ -1,14 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import data from '../assets/data.json'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const BookIndex = () => {
   const poems = data.data
-
   const randomNumber = Math.floor(Math.random() * (poems.length + 1))
-
   return (
-    <div className='index'>
+    <motion.div
+      className='index'
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
+    >
       <h2 className='title bold'>Indice</h2>
       <div className='index__container'>
         <ol className='index__list'>
@@ -25,7 +28,7 @@ const BookIndex = () => {
         <p><Link className='index__link poem__nav--prev' to={`/odas-necias/indice/${poems[randomNumber].slug}`}>Oda al azar</Link></p>
         <p><Link className='index__link poem__nav--next' to={`/odas-necias/indice/${poems[0].slug}`}>Comenzar a leer</Link></p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
