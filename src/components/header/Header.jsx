@@ -29,11 +29,11 @@ const Header = () => {
           <Hamburguer drawer={drawer} />
         </div>
         <div className='header__middle'>
-          <p className='high-font bold'><Link to='/'>Odas necias</Link></p>
+          <p className='high-font bold'><Link to='/odas-necias'>Odas necias</Link></p>
         </div>
         <div className='header__right desktop'>
           <ul className='flex'>
-            <li><NavLink to='/indice'>Indice</NavLink></li>
+            <li><NavLink to='/odas-necias/indice'>Indice</NavLink></li>
             <li className='header__right--megamenu'>
               Descargar
               <div className='megamenu'>

@@ -14,7 +14,7 @@ const BookIndex = () => {
         <ol className='index__list'>
           {poems.map((poem, index) => (
             <li className='index__list--item' key={index}>
-              <Link to={`/indice/${poem.slug}`} className='flex'>
+              <Link to={`/odas-necias/indice/${poem.slug}`} className='flex'>
                 <span className='index--roman' /> <span className='poem-title'>{poem.title}</span>
               </Link>
             </li>
@@ -22,8 +22,8 @@ const BookIndex = () => {
         </ol>
       </div>
       <div className='poem__nav'>
-        <p><Link className='index__link poem__nav--prev' to={`/indice/${poems[randomNumber].slug}`}>Oda al azar</Link></p>
-        <p><Link className='index__link poem__nav--next' to={`/indice/${poems[0].slug}`}>Comenzar a leer</Link></p>
+        <p><Link className='index__link poem__nav--prev' to={`/odas-necias/indice/${poems[randomNumber].slug}`}>Oda al azar</Link></p>
+        <p><Link className='index__link poem__nav--next' to={`/odas-necias/indice/${poems[0].slug}`}>Comenzar a leer</Link></p>
       </div>
     </div>
   )

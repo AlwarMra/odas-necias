@@ -14,7 +14,7 @@ const Home = () => {
       <p className='quote'>Agosto 2022, Madrid</p>
       <p className='quote'>A.M.A.</p>
       <div className='poem__nav'>
-        <NavLink className='poem__nav--next bold' to='/indice'>Indice <span className='poem__nav--arrow right'><span className='shaft' /></span></NavLink>
+        <NavLink className='poem__nav--next bold' to='/odas-necias/indice'>Indice <span className='poem__nav--arrow right'><span className='shaft' /></span></NavLink>
       </div>
     </div>
   )

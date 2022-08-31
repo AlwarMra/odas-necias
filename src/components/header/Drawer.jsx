@@ -18,10 +18,10 @@ const Drawer = ({ checked, drawer, PDF, EPUB }) => {
       <div className='drawer__body'>
         <ul onClick={drawer}>
           <li>
-            <NavLink to='/' className='drawer__body--item'>Prólogo</NavLink>
+            <NavLink to='/odas-necias' className='drawer__body--item'>Prólogo</NavLink>
           </li>
           <li>
-            <NavLink to='/indice' className='drawer__body--item'>Indice</NavLink>
+            <NavLink to='/odas-necias/indice' className='drawer__body--item'>Indice</NavLink>
           </li>
           <li>
             <span className='drawer__body--item accordion' data-accordion-open={open} onClick={e => accordion(e)}>Descargar</span>
