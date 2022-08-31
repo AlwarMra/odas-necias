@@ -6,9 +6,9 @@ function App () {
     <div className='App container'>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/indice' element={<BookIndex />} />
-        <Route path='/indice/:oda' element={<Oda />} />
+        <Route path='/odas-necias' element={<Home />} />
+        <Route path='/odas-necias/indice' element={<BookIndex />} />
+        <Route path='/odas-necias/indice/:oda' element={<Oda />} />
       </Routes>
       <Footer />
     </div>
