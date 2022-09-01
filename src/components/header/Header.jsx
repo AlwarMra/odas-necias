@@ -33,7 +33,7 @@ const Header = () => {
         </div>
         <div className='header__right desktop'>
           <ul className='flex'>
-            <li><NavLink to='/odas-necias/indice'>Indice</NavLink></li>
+            <li><NavLink to='/odas-necias/indice' end>Indice</NavLink></li>
             <li className='header__right--megamenu'>
               Descargar
               <div className='megamenu'>
