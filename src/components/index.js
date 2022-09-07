@@ -1,3 +1,4 @@
+export { default as ColorSwitch } from './header/ColorSwitch'
 export { default as Header } from './header/Header'
 export { default as Home } from './Home'
 export { default as AnimatedRoutes } from './AnimatedRoutes'

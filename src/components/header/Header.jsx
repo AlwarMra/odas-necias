@@ -5,6 +5,7 @@ import Drawer from './Drawer'
 import Hamburguer from './Hamburguer'
 import PDF from '../../assets/ODAS-NECIAS.pdf'
 import EPUB from '../../assets/ODAS-NECIAS.epub'
+import ColorSwitch from './ColorSwitch'
 
 const Header = () => {
   const [checked, setChecked] = useState(false)
@@ -44,6 +45,9 @@ const Header = () => {
           </ul>
         </div>
       </header>
+      <div className='color__switcher--desktop desktop'>
+        <ColorSwitch />
+      </div>
     </>
   )
 }

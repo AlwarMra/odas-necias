@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap');
 
+
 :root {
-	--main-color: #fffafa;
-	--secondary-color: #404040;
-  
 	--high-font: 'Libre Baskerville', serif;
 	--regular-font: 'Montserrat', sans-serif;
   }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,11 +60,7 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	color: var(--secondary-color);
 	font-family: var(--high-font);
 }
-.App {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
+
 /*General classes*/
 .title {
 	font-family: var(--high-font);
@@ -77,6 +69,11 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 }
 .bold {
 	font-weight: bold;
+}
+.app__wrapper {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 .container {
 	max-width: 1000px;

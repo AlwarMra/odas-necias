@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import ColorSwitch from './ColorSwitch'
 
 const Drawer = ({ checked, drawer, PDF, EPUB }) => {
   const [open, setOpen] = useState(false)
@@ -31,6 +32,9 @@ const Drawer = ({ checked, drawer, PDF, EPUB }) => {
             </div>
           </li>
         </ul>
+      </div>
+      <div className='color__switcher--mobile'>
+        <ColorSwitch />
       </div>
     </div>
   )
