@@ -1,28 +1,28 @@
-import { createContext, useState, useEffect } from 'react'
+import { createContext, useState } from 'react'
 
-const initialTheme = localStorage.getItem('theme') ?? 'light'
+const initialTheme = window.localStorage.getItem('theme') ?? 'light'
 const ThemeContext = createContext(initialTheme)
+
+const root = document.querySelector(':root')
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(initialTheme)
 
-  const stylesheet = document.getElementById('pagestyle')
   const toggleTheme = () => {
     if (theme === 'light') {
-      stylesheet.setAttribute('href', '/src/root-dark.css')
-      localStorage.setItem('theme', 'dark')
       setTheme('dark')
+      root.style.setProperty('--main-color', '#404040')
+      root.style.setProperty('--secondary-color', '#fffafa')
+      window.localStorage.setItem('theme', 'dark')
     } else {
-      stylesheet.setAttribute('href', '/src/root.css')
-      localStorage.setItem('theme', 'light')
       setTheme('light')
+      root.style.setProperty('--main-color', '#fffafa')
+      root.style.setProperty('--secondary-color', '#404040')
+      window.localStorage.setItem('theme', 'light')
     }
   }
   const data = { theme, toggleTheme }
 
-  useEffect(() => {
-    if (theme === 'dark') stylesheet.setAttribute('href', '/src/root-dark.css')
-  }, [])
   return (
     <ThemeContext.Provider value={data}>
       {children}

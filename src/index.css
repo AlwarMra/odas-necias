@@ -4,6 +4,9 @@
 :root {
 	--high-font: 'Libre Baskerville', serif;
 	--regular-font: 'Montserrat', sans-serif;
+
+	--main-color: #fffafa;
+	--secondary-color: #404040;
   }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -60,7 +63,9 @@ p,span, h1, h2, h3, h4, h5, li, pre, a, small {
 	color: var(--secondary-color);
 	font-family: var(--high-font);
 }
-
+#dark {
+	
+}
 /*General classes*/
 .title {
 	font-family: var(--high-font);
